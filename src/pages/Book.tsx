@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 
-const Index = () => {
+const Book = () => {
   return (
     <div className="relative min-h-screen bg-background overflow-hidden">
       {/* Textured background overlay */}
@@ -16,10 +16,9 @@ const Index = () => {
       <div className="relative z-10 min-h-screen flex flex-col">
         <Header />
         
-        {/* Hero Section */}
-        <main className="flex-1 flex items-center justify-center px-6 sm:px-12 py-12 sm:py-0">
-          <h1 className="font-serif italic text-foreground text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[14rem] font-bold leading-none tracking-tight">
-            Résumé
+        <main className="flex-1 flex items-center justify-center px-6 sm:px-12 py-12">
+          <h1 className="font-serif italic text-foreground text-5xl sm:text-6xl md:text-7xl font-bold leading-none tracking-tight">
+            My Book
           </h1>
         </main>
       </div>
@@ -27,4 +26,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Book;
