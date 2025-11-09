@@ -18,17 +18,17 @@ const Index = () => {
             {/* Left: Name and Role */}
             <div className="text-foreground font-sans">
               <h2 className="text-base sm:text-lg font-semibold tracking-wide uppercase">
-                SALAR
+                Harshit Pal
               </h2>
               <p className="text-sm sm:text-base opacity-90 tracking-wide">
-                [graphic designer]
+                [Stellar Astrophysicist]
               </p>
             </div>
             
             {/* Center: Portfolio Year */}
             <div className="text-foreground font-sans text-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
               <h1 className="text-base sm:text-lg font-semibold tracking-wider uppercase">
-                PORTFOLIO
+                RÉSUMÉ
               </h1>
               <p className="text-sm sm:text-base opacity-90 tracking-wide">
                 2024
@@ -41,10 +41,10 @@ const Index = () => {
                 SAY HI
               </p>
               <a 
-                href="mailto:salarkhanlala@gmail.com" 
+                href="mailto:harshit.iiser@gmail.com" 
                 className="text-sm sm:text-base opacity-90 hover:opacity-100 transition-opacity tracking-wide block"
               >
-                [ salarkhanlala@gmail.com ]
+                [ harshit.iiser@gmail.com ]
               </a>
             </div>
           </nav>
@@ -53,7 +53,7 @@ const Index = () => {
         {/* Hero Section */}
         <main className="flex-1 flex items-center justify-center px-6 sm:px-12 py-12 sm:py-0">
           <h1 className="font-serif italic text-foreground text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] xl:text-[14rem] font-bold leading-none tracking-tight">
-            Portfolio
+            Résumé
           </h1>
         </main>
       </div>
