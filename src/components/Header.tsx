@@ -16,28 +16,18 @@ const Header = () => {
   return (
     <header className="w-full px-6 sm:px-12 lg:px-20 py-8 sm:py-12">
       <nav className="flex flex-col sm:flex-row items-start sm:items-start justify-between gap-6 sm:gap-4">
-        {/* Left: Name and Role */}
-        <div className="text-foreground font-sans">
+        {/* Left: Name and Role - Clickable */}
+        <Link to="/about" className="text-foreground font-sans hover:opacity-80 transition-opacity">
           <h2 className="text-base sm:text-lg font-semibold tracking-wide uppercase">
             Harshit Pal
           </h2>
           <p className="text-sm sm:text-base opacity-90 tracking-wide">
             [Stellar Astrophysicist]
           </p>
-        </div>
-        
-        {/* Center: Portfolio Year */}
-        <div className="text-foreground font-sans text-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
-          <h1 className="text-base sm:text-lg font-semibold tracking-wider uppercase">
-            RÉSUMÉ
-          </h1>
-          <p className="text-sm sm:text-base opacity-90 tracking-wide">
-            2024
-          </p>
-        </div>
+        </Link>
         
         {/* Right: Contact */}
-        <div className="text-foreground font-sans sm:text-right">
+        <div className="text-foreground font-sans sm:text-right sm:ml-auto">
           <p className="text-base sm:text-lg font-semibold tracking-wide uppercase">
             SAY HI
           </p>
