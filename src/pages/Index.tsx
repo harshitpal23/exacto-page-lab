@@ -20,10 +20,10 @@ const Index = () => {
         <main className="flex-1 flex items-center justify-center px-6 sm:px-12 py-12 sm:py-0">
           <div className="text-center">
             <h1 className="font-serif italic text-foreground text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tight mb-6">
-              Hii, I'm Harshit !!
+              Hi, I'm Harshit !
             </h1>
             <p className="font-sans text-foreground/80 text-xl sm:text-2xl md:text-3xl tracking-wide">
-              I look at stars — for a living
+              I look at the stars —for a living.
             </p>
           </div>
         </main>
@@ -53,8 +53,33 @@ const Index = () => {
       </div>
       
       {/* Second Section - About PhD */}
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 py-20 bg-background/95">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 py-20">
+        {/* Same textured background */}
+        <div 
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+            backgroundSize: '180px 180px',
+          }}
+        />
+        
+        {/* Yellow Starfield Animation */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(30)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-primary/40 rounded-full animate-pulse"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 3}s`,
+                animationDuration: `${2 + Math.random() * 3}s`,
+              }}
+            />
+          ))}
+        </div>
+        
+        <div className="relative z-10 max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6">
             <h2 className="font-serif italic text-foreground text-4xl sm:text-5xl md:text-6xl font-bold">
               About My Journey
